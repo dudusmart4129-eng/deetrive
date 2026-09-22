@@ -7,9 +7,7 @@
 
     <title>Dashboard | Deetrive</title>
 
-  <script type="module" crossorigin src="/deetrive/assets/dashboard-WPyCCPxp.js"></script>
-  <link rel="modulepreload" crossorigin href="/deetrive/assets/wix-client-BcyrvGQV.js">
-  <link rel="stylesheet" crossorigin href="/deetrive/assets/style-ygTtUYgC.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
@@ -19,7 +17,7 @@
 
     <div class="brand">
         <img
-            src="/deetrive/assets/full-logo-IxWUonjQ.png"
+            src="./full-logo.png"
             alt="Deetrive"
             class="brand-logo"
         >
@@ -354,6 +352,41 @@
 
 
     <!-- LOGOUT -->
+    <script type="module">
+
+        import { wixClient } from './wix-client.js';
+
+        const logoutButton =
+            document.querySelector('#logout-btn');
+
+        logoutButton.addEventListener('click', async () => {
+
+            try {
+
+                const currentUrl =
+                    window.location.href;
+
+                const { logoutUrl } =
+                    await wixClient.auth.logout(currentUrl);
+
+                window.location.href = logoutUrl;
+
+            } catch (error) {
+
+                console.error(
+                    'Logout error:',
+                    error
+                );
+
+                alert(
+                    'Unable to log out right now.'
+                );
+
+            }
+
+        });
+
+    </script>
 
 </body>
 

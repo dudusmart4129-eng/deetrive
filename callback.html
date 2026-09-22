@@ -4,11 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signing in | Deetrive</title>
-  <script type="module" crossorigin src="/deetrive/assets/callback-4oubRXN6.js"></script>
-  <link rel="modulepreload" crossorigin href="/deetrive/assets/wix-client-BcyrvGQV.js">
 </head>
 <body>
     <p id="status">Signing you in...</p>
 
+    <script type="module">
+        import { wixClient } from './wix-client.js';
+
+        const status = document.querySelector('#status');
+
+        try {
+            const oauthData = JSON.parse(
+                sessionStorage.getItem('wixOAuthData')
+            );
+
+            if (!oauthData) {
+                throw new Error('OAuth data not found.');
+            }
+
+            const { code, state } = wixClient.auth.parseFromUrl(
+                window.location.href,
+                'query'
+            );
+
+            if (!code || !state) {
+                throw new Error('Authorization code not found.');
+            }
+
+            const tokens = await wixClient.auth.getMemberTokens(
+                code,
+                state,
+                oauthData
+            );
+
+            wixClient.auth.setTokens(tokens);
+
+            sessionStorage.removeItem('wixOAuthData');
+            sessionStorage.removeItem('wixSessionToken');
+
+            status.textContent = 'Login successful!';
+
+            window.location.href = 'dashboard.html';
+
+        } catch (error) {
+            console.error('Wix callback error:', error);
+            status.textContent = 'Login could not be completed.';
+        }
+    </script>
 </body>
 </html>
