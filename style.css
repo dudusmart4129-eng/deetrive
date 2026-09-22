@@ -480,3 +480,30 @@ button {
     letter-spacing: 0.8px;
     text-transform: uppercase;
 }
+
+/* Deetrive header layout */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.brand-logo {
+    width: 180px;
+    height: auto;
+    display: block;
+}
+
+.brand p {
+    margin: 0;
+    font-size: 12px;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+}
