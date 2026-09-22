@@ -1,5 +1,5 @@
 import { wixClient } from './wix-client.js';
-import { login } from '@wix/site-members';
+// no import needed
 
 const form = document.querySelector('form');
 
@@ -10,15 +10,44 @@ form.addEventListener('submit', async (event) => {
     const password = document.querySelector('#password').value;
 
     try {
-        await login(wixClient, {
-            email,
-            password
-        });
+        const response = await wixClient.auth.login({
+    email,
+    password
+});
+        console.log('Wix login response:', response);
 
-        window.location.href = 'dashboard.html';
+        if (response.loginState === 'SUCCESS') {
+    const sessionToken = response.data.sessionToken;
 
-    } catch (error) {
-        console.error(error);
-        alert('Login failed. Please check your email and password.');
-    }
+    sessionStorage.setItem('wixSessionToken', sessionToken);
+
+    const redirectUri = 'https://dudusmart4129-eng.github.io/deetrive/callback.html';
+
+    const oauthData = wixClient.auth.generateOAuthData(
+        redirectUri,
+        window.location.href
+    );
+
+    sessionStorage.setItem(
+        'wixOAuthData',
+        JSON.stringify(oauthData)
+    );
+
+    const { authUrl } = await wixClient.auth.getAuthUrl(oauthData, {
+        prompt: 'login',
+        responseMode: 'query',
+        sessionToken
+    });
+
+    window.location.href = authUrl;
+        }
+          
+        else {
+            alert(`Login requires another step: ${response.loginState}`);
+        }
+
+ } catch (error) {
+    console.error('Wix login error:', error);
+    alert(`Wix error: ${error.message || error}`);
+}
 });
