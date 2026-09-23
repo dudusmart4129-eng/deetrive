@@ -1,0 +1,1 @@
+import{n as e,r as t,t as n}from"./wix-client-BVE3xI4-.js";t((()=>{n(),e.auth.init().then(()=>{document.querySelector(`#logout-btn`).addEventListener(`click`,async()=>{try{let t=window.location.href,{logoutUrl:n}=await e.auth.logout(t);window.location.href=n}catch(e){console.error(`Logout error:`,e),alert(`Unable to log out right now.`)}})})}))();
