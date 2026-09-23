@@ -15,6 +15,7 @@ form.addEventListener('submit', async (event) => {
     password
 });
         console.log('Wix login response:', response);
+        alert(JSON.stringify(response));
 
         if (response.loginState === 'SUCCESS') {
     const sessionToken = response.data.sessionToken;
