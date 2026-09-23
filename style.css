@@ -24,17 +24,12 @@ header h1 {
 }
 
 nav {
+    grid-column: 1 / -1;
     display: flex;
     gap: 20px;
-}
-
-nav a {
-    color: #aeb6c7;
-    text-decoration: none;
-}
-
-nav a:hover {
-    color: white;
+    align-items: center;
+    overflow-x: auto;
+    padding-top: 4px;
 }
 
 header button {
@@ -483,12 +478,11 @@ button {
 
 /* Deetrive header layout */
 header {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr auto;
     align-items: center;
-    justify-content: space-between;
-    gap: 20px;
+    gap: 16px 24px;
 }
-
 .brand {
     display: flex;
     align-items: center;
@@ -506,4 +500,46 @@ header {
     font-size: 12px;
     letter-spacing: 0.8px;
     text-transform: uppercase;
+}
+
+.header-right {
+    margin-left: auto;
+}
+
+#logout-btn {
+    white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+    header {
+        grid-template-columns: 1fr auto;
+        gap: 12px;
+    }
+
+    .brand-logo {
+        width: 150px;
+    }
+
+    .brand {
+        gap: 8px;
+    }
+
+    .brand p {
+        font-size: 10px;
+    }
+
+    #logout-btn {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+
+    nav {
+        gap: 16px;
+        padding-bottom: 4px;
+    }
+
+    nav a {
+        white-space: nowrap;
+        font-size: 13px;
+    }
 }
