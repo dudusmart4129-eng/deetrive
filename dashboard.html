@@ -7,7 +7,7 @@
 
     <title>Dashboard | Deetrive</title>
 
-  <script type="module" crossorigin src="/deetrive/assets/dashboard-BzK_ovcC.js"></script>
+  <script type="module" crossorigin src="/deetrive/assets/dashboard-CufZHHj3.js"></script>
   <link rel="modulepreload" crossorigin href="/deetrive/assets/wix-client-BcyrvGQV.js">
   <link rel="stylesheet" crossorigin href="/deetrive/assets/style-CRnjhlG2.css">
 </head>
@@ -17,9 +17,20 @@
     <!-- HEADER -->
     <header>
 
-        <div>
-            <h1>Deetrive</h1>
-            <p>Digital Asset Management</p>
+        <div class="brand">
+            <img
+                src="/deetrive/assets/full-logo-IxWUonjQ.png"
+                alt="Deetrive"
+                class="brand-logo"
+            >
+
+            <p>Crypto Wallet | Secure Assets</p>
+        </div>
+
+        <div class="header-right">
+            <button type="button" id="logout-btn">
+                Log Out
+            </button>
         </div>
 
         <nav>
@@ -28,10 +39,6 @@
             <a href="#transactions">Transactions</a>
             <a href="#security">Security</a>
         </nav>
-
-        <button id="logout-btn">
-            Log Out
-        </button>
 
     </header>
 
@@ -144,15 +151,15 @@
         </section>
 
 
-        <!-- ASSETS -->
-        <section class="dashboard-section">
+        <!-- CRYPTO WALLET ASSETS -->
+        <section id="assets" class="dashboard-section">
 
             <p class="section-label">
-                ASSETS
+                SECURE WALLET
             </p>
 
             <h2>
-                Your Assets
+                Crypto Assets
             </h2>
 
             <div class="dashboard-grid">
@@ -346,9 +353,6 @@
         </p>
 
     </footer>
-
-
-    <!-- LOGOUT -->
 
 </body>
 
