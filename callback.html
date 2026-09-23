@@ -38,9 +38,10 @@
             );
 
             wixClient.auth.setTokens(tokens);
+            localStorage.setItem('wixTokens', JSON.stringify(tokens));
 
             localStorage.removeItem('wixOAuthData');
-            sessionStorage.removeItem('wixSessionToken');
+            localStorage.removeItem('wixSessionToken');
 
             status.textContent = 'Login successful!';
 
