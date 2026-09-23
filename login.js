@@ -19,7 +19,7 @@ form.addEventListener('submit', async (event) => {
         if (response.loginState === 'SUCCESS') {
     const sessionToken = response.data.sessionToken;
 
-    sessionStorage.setItem('wixSessionToken', sessionToken);
+    localStorage.setItem('wixSessionToken', sessionToken);
 
     const redirectUri = 'https://dudusmart4129-eng.github.io/deetrive/callback.html';
 
@@ -28,7 +28,7 @@ form.addEventListener('submit', async (event) => {
         window.location.href
     );
 
-    sessionStorage.setItem(
+    localStorage.setItem(
         'wixOAuthData',
         JSON.stringify(oauthData)
     );
