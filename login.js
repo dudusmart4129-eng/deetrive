@@ -2,6 +2,8 @@ import { wixClient } from './wix-client.js';
 
 const form = document.querySelector('form');
 
+alert('login.js loaded');
+
 form.addEventListener('submit', async (event) => {
     event.preventDefault();
 
