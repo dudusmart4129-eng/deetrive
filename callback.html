@@ -30,7 +30,7 @@
             const { code, state, error, errorDescription } =
                 wixClient.auth.parseFromUrl(
                     window.location.href,
-                    'query'
+                    'fragment'
                 );
 
             if (error) {
