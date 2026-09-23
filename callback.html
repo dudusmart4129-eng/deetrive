@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signing in | Deetrive</title>
 </head>
+
 <body>
+
     <p id="status">Signing you in...</p>
 
     <script type="module">
@@ -14,22 +16,36 @@
         const status = document.querySelector('#status');
 
         try {
-            const oauthData = JSON.parse(
-                localStorage.getItem('wixOAuthData')
-            );
+            // Get the OAuth data saved before leaving for Wix
+            const savedOAuthData = localStorage.getItem('wixOAuthData');
 
-            if (!oauthData) {
+            if (!savedOAuthData) {
                 throw new Error('OAuth data not found.');
             }
 
-            const { code, state } = wixClient.auth.parseFromUrl(
-                window.location.href,
-                'query'
-            );
+            const oauthData = JSON.parse(savedOAuthData);
+
+            // Our login.js requests responseMode: "query",
+            // so Wix returns code and state in the query string.
+            const { code, state, error, errorDescription } =
+                wixClient.auth.parseFromUrl(
+                    window.location.href,
+                    'query'
+                );
+
+            if (error) {
+                throw new Error(
+                    errorDescription || error
+                );
+            }
 
             if (!code || !state) {
-                throw new Error('Authorization code not found.');
+                throw new Error(
+                    'Authorization code or state not found.'
+                );
             }
+
+            status.textContent = 'Getting member tokens...';
 
             const tokens = await wixClient.auth.getMemberTokens(
                 code,
@@ -37,20 +53,29 @@
                 oauthData
             );
 
+            // Store the authenticated Wix session
             wixClient.auth.setTokens(tokens);
-            localStorage.setItem('wixTokens', JSON.stringify(tokens));
 
+            localStorage.setItem(
+                'wixTokens',
+                JSON.stringify(tokens)
+            );
+
+            // OAuth data is no longer needed
             localStorage.removeItem('wixOAuthData');
-            localStorage.removeItem('wixSessionToken');
 
             status.textContent = 'Login successful!';
 
+            // Send the user to the Deetrive dashboard
             window.location.href = 'dashboard.html';
 
         } catch (error) {
             console.error('Wix callback error:', error);
-            status.textContent = 'Login could not be completed.';
+
+            status.textContent =
+                `Login error: ${error.message || error}`;
         }
     </script>
+
 </body>
 </html>
