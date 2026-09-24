@@ -1,521 +1,470 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
 
-<head>
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
 
-    <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
-
-    <title>Dashboard | Deetrive</title>
+<title>Dashboard | Deetrive</title>
 
 
-    <!-- WIX MEMBER + LOGOUT -->
+<!-- WIX MEMBER + LOGOUT -->
 
 
 
 
-  <script type="module" crossorigin src="/deetrive/assets/dashboard-BAQGGNFt.js"></script>
+  <script type="module" crossorigin src="/deetrive/assets/dashboard-DTjXkcol.js"></script>
   <link rel="modulepreload" crossorigin href="/deetrive/assets/wix-client-DzJGh-cf.js">
   <link rel="stylesheet" crossorigin href="/deetrive/assets/style-B2Rbswhv.css">
-</head>
+</head><body><!-- ========================= -->
+<!-- HEADER -->
+<!-- ========================= -->
+
+<header>
 
 
-<body>
+    <div class="brand">
+
+        <img
+            src="/deetrive/assets/full-logo-DZM8SwFj.png"
+            alt="Deetrive"
+            class="brand-logo"
+        >
+
+        <p class="header-tagline">
+            Crypto Wallet | Secure Assets
+        </p>
+
+    </div>
 
 
-    <!-- ========================= -->
-    <!-- HEADER -->
-    <!-- ========================= -->
+    <div class="header-right">
 
-    <header>
+        <button
+            type="button"
+            id="logout-btn"
+        >
+            Log Out
+        </button>
+
+    </div>
 
 
-        <div class="brand">
+    <nav>
 
-            <img
-                src="/deetrive/assets/full-logo-DZM8SwFj.png"
-                alt="Deetrive"
-                class="brand-logo"
-            >
+        <a href="dashboard.html">
+            Dashboard
+        </a>
 
-            <p class="header-tagline">
-                Crypto Wallet | Secure Assets
-            </p>
+        <a href="#investments">
+            Investments
+        </a>
+
+        <a href="#transactions">
+            Transactions
+        </a>
+
+        <a href="#security">
+            Security
+        </a>
+
+    </nav>
+
+
+</header>
+
+
+
+<!-- ========================= -->
+<!-- MAIN DASHBOARD -->
+<!-- ========================= -->
+
+<main class="dashboard">
+
+
+    <!-- WELCOME -->
+
+    <section class="dashboard-intro">
+
+        <p class="section-label">
+            DASHBOARD
+        </p>
+
+        <h2 id="welcome-message">
+            Welcome back 👋
+        </h2>
+
+        <p>
+            Here's an overview of your Deetrive account.
+        </p>
+
+    </section>
+
+
+
+    <!-- PORTFOLIO SUMMARY -->
+
+    <section class="portfolio-card">
+
+        <p>
+            Total Portfolio Value
+        </p>
+
+        <h2>
+            $0.00
+        </h2>
+
+        <span>
+            Your portfolio balance will appear here.
+        </span>
+
+    </section>
+
+
+
+    <!-- QUICK ACTIONS -->
+
+    <section class="dashboard-section">
+
+        <p class="section-label">
+            QUICK ACTIONS
+        </p>
+
+        <h2>
+            Manage Your Account
+        </h2>
+
+
+        <div class="dashboard-grid">
+
+
+            <div class="dashboard-card">
+
+                <h3>
+                    Deposit
+                </h3>
+
+                <p>
+                    Add funds to your account.
+                </p>
+
+                <button type="button">
+                    Deposit
+                </button>
+
+            </div>
+
+
+            <div class="dashboard-card">
+
+                <h3>
+                    Withdraw
+                </h3>
+
+                <p>
+                    Withdraw available funds.
+                </p>
+
+                <button type="button">
+                    Withdraw
+                </button>
+
+            </div>
+
+
+            <div class="dashboard-card">
+
+                <h3>
+                    Investments
+                </h3>
+
+                <p>
+                    View and manage your investments.
+                </p>
+
+                <button type="button">
+                    View Investments
+                </button>
+
+            </div>
+
 
         </div>
 
+    </section>
 
-        <div class="header-right">
 
-            <button
-                type="button"
-                id="logout-btn"
-            >
-                Log Out
+
+    <!-- CRYPTO WALLET -->
+
+    <section
+        id="assets"
+        class="dashboard-section"
+    >
+
+        <p class="section-label">
+            SECURE WALLET
+        </p>
+
+        <h2>
+            Crypto Assets
+        </h2>
+
+
+        <div class="dashboard-grid">
+
+
+            <div class="dashboard-card">
+
+                <div class="asset-icon">
+
+                    <img
+                        src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='Vrstva_1'%20xmlns='http://www.w3.org/2000/svg'%20version='1.1'%20viewBox='0%200%20144%20145'%3e%3c!--%20Generator:%20Adobe%20Illustrator%2029.4.0,%20SVG%20Export%20Plug-In%20.%20SVG%20Version:%202.1.0%20Build%20152)%20--%3e%3cdefs%3e%3cstyle%3e%20.st0%20{%20fill:%20%23fff;%20}%20.st1%20{%20fill:%20%23f7931a;%20}%20%3c/style%3e%3c/defs%3e%3cpath%20class='st1'%20d='M141.845993,89.6650009c-9.6209869,38.5709915-48.6898956,62.0459976-87.2698898,52.4280014C16.0121002,132.4759979-7.46593,93.4079971,2.1570699,54.8390007,11.7711,16.2639999,50.8431015-7.2140098,89.4101028,2.4029901c38.5748978,9.6170104,62.0519028,48.6880095,52.4358902,87.2620108Z'/%3e%3cpath%20class='st0'%20d='M48.3110008,84.375c-.3920021.9720001-1.3850021,2.4309998-3.6210022,1.8769989.0790024.1139984-5.7449989-1.4329987-5.7449989-1.4329987l-3.9199982,9.0410004,10.2799988,2.5629959c1.9109993.4790039,3.7879982.9790039,5.632,1.4530029l-3.2670021,13.1269989,7.8910027,1.9690018,3.2369995-12.9869995c2.1580009.5839996,4.25,1.125,6.2980003,1.6340027l-3.2260017,12.9259949,7.8999977,1.9690018,3.2700043-13.1019974c13.4729996,2.5479965,23.6039963,1.5199966,27.8659973-10.663002,3.4370041-9.8099976-.1699982-15.4690018-7.2579956-19.1600037,5.1609955-1.1899948,9.0509949-4.5859985,10.0879974-11.5979958,1.4329987-9.5820007-5.862999-14.7310028-15.8379974-18.1669998l3.2350006-12.9780006-7.8990021-1.9689999-3.151001,12.6359997c-2.0790024-.5180016-4.2099991-1.0060005-6.3310013-1.4890022l3.1709976-12.7199974-7.8939972-1.9690018-3.2389984,12.9760017-15.9309998-3.9459991-2.1020012,8.4369965s5.8610001,1.3430023,5.7369995,1.427002c3.2000008.7989998,3.7770004,2.9160004,3.6809998,4.5940018l-8.8639984,35.5519981ZM85.6869965,87.302002c-2.4440002,9.810997-18.9599991,4.5069962-24.317997,3.1759949l4.3380013-17.3889999c5.3549957,1.3350067,22.5299988,3.9810028,19.9799957,14.2130051ZM88.1269989,61.8499985c-2.2259979,8.9240036-15.9749985,4.3889999-20.4349976,3.2770004l3.9319992-15.7719994c4.4589996,1.1119995,18.8239975,3.1870003,16.5029984,12.4949989Z'/%3e%3c/svg%3e"
+                        alt="Bitcoin"
+                    >
+
+                </div>
+
+                <h3>
+                    Bitcoin
+                </h3>
+
+                <p>
+                    BTC
+                </p>
+
+                <strong>
+                    $0.00
+                </strong>
+
+            </div>
+
+
+            <div class="dashboard-card">
+
+                <div class="asset-icon">
+
+                    <img
+                        src="data:image/svg+xml,%3csvg%20width='165'%20height='165'%20viewBox='0%200%20165%20165'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M54.6366%2084.7375C57.3593%2087.7551%2068.4638%2090.0184%2081.7556%2090.0187C95.0473%2090.0184%20106.152%2087.7551%20108.868%2084.7375C106.568%2082.1761%2098.2286%2080.16%2087.6395%2079.6084V85.9928C85.7422%2086.0879%2083.7694%2086.1387%2081.7524%2086.1387C79.7354%2086.1387%2077.7626%2086.0943%2075.8653%2085.9928V79.6084C65.2825%2080.16%2056.9435%2082.1761%2054.6366%2084.7375Z'%20fill='%23009393'/%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M117.391%2048.0668L135.525%2079.3865V79.3929C136.464%2081.0159%20136.187%2083.0637%20134.844%2084.3825L84.924%20133.397C83.3041%20134.989%2080.701%20134.989%2079.0874%20133.397L29.2301%2084.4459C27.8623%2083.0954%2027.6039%2080.9906%2028.6124%2079.3548L47.9943%2047.9654C48.7507%2046.7481%2050.0933%2046%2051.5367%2046H113.792C115.28%2046%20116.647%2046.7862%20117.391%2048.0668ZM87.6458%2068.7733V74.8661H87.6395C100.094%2075.5191%20109.442%2078.1946%20109.511%2081.4027V88.085C109.442%2091.2931%20100.094%2093.9622%2087.6395%2094.6153V109.571H75.8653V94.6153C63.4105%2093.9622%2054.0693%2091.2931%2054%2088.085V81.4027C54.0693%2078.1946%2063.4105%2075.5191%2075.8653%2074.8661V68.7733H58.1348V59.9861H105.376V68.7733H87.6458Z'%20fill='%23009393'/%3e%3c/svg%3e"
+                        alt="Tether"
+                    >
+
+                </div>
+
+                <h3>
+                    Tether
+                </h3>
+
+                <p>
+                    USDT
+                </p>
+
+                <strong>
+                    $0.00
+                </strong>
+
+            </div>
+
+
+            <div class="dashboard-card">
+
+                <div class="asset-icon">
+
+                    <img
+                        src="data:image/svg+xml,%3csvg%20enable-background='new%200%200%201920%201920'%20viewBox='0%200%201920%201920'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='m959.8%2080.7-539.7%20895.6%20539.7-245.3z'%20fill='%238a92b2'/%3e%3cpath%20d='m959.8%20731-539.7%20245.3%20539.7%20319.1z'%20fill='%2362688f'/%3e%3cpath%20d='m1499.6%20976.3-539.8-895.6v650.3z'%20fill='%2362688f'/%3e%3cpath%20d='m959.8%201295.4%20539.8-319.1-539.8-245.3z'%20fill='%23454a75'/%3e%3cpath%20d='m420.1%201078.7%20539.7%20760.6v-441.7z'%20fill='%238a92b2'/%3e%3cpath%20d='m959.8%201397.6v441.7l540.1-760.6z'%20fill='%2362688f'/%3e%3c/svg%3e"
+                        alt="Ethereum"
+                    >
+
+                </div>
+
+                <h3>
+                    Ethereum
+                </h3>
+
+                <p>
+                    ETH
+                </p>
+
+                <strong>
+                    $0.00
+                </strong>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- INVESTMENTS -->
+
+    <section
+        id="investments"
+        class="dashboard-section"
+    >
+
+        <p class="section-label">
+            INVESTMENTS
+        </p>
+
+        <h2>
+            Your Investments
+        </h2>
+
+
+        <div class="dashboard-card">
+
+            <h3>
+                No investments yet
+            </h3>
+
+            <p>
+                Your active investments will appear
+                here when you have an investment.
+            </p>
+
+            <button type="button">
+                Explore Investments
             </button>
 
         </div>
 
+    </section>
 
-        <nav>
 
-            <a href="dashboard.html">
-                Dashboard
-            </a>
 
-            <a href="#investments">
-                Investments
-            </a>
+    <!-- TRANSACTIONS -->
 
-            <a href="#transactions">
-                Transactions
-            </a>
+    <section
+        id="transactions"
+        class="dashboard-section"
+    >
 
-            <a href="#security">
-                Security
-            </a>
-
-        </nav>
-
-
-    </header>
-
-
-
-    <!-- ========================= -->
-    <!-- MAIN DASHBOARD -->
-    <!-- ========================= -->
-
-    <main class="dashboard">
-
-
-        <!-- ========================= -->
-        <!-- WELCOME -->
-        <!-- ========================= -->
-
-        <section class="dashboard-intro">
-
-            <p class="section-label">
-                DASHBOARD
-            </p>
-
-            <h2 id="welcome-message">
-                Welcome back 👋
-            </h2>
-
-            <p>
-                Here's an overview of your Deetrive account.
-            </p>
-
-        </section>
-
-
-
-        <!-- ========================= -->
-        <!-- PORTFOLIO SUMMARY -->
-        <!-- ========================= -->
-
-        <section class="portfolio-card">
-
-            <p>
-                Total Portfolio Value
-            </p>
-
-            <h2>
-                $0.00
-            </h2>
-
-            <span>
-                Your portfolio balance will appear here.
-            </span>
-
-        </section>
-
-
-
-        <!-- ========================= -->
-        <!-- QUICK ACTIONS -->
-        <!-- ========================= -->
-
-        <section class="dashboard-section">
-
-            <p class="section-label">
-                QUICK ACTIONS
-            </p>
-
-            <h2>
-                Manage Your Account
-            </h2>
-
-
-            <div class="dashboard-grid">
-
-
-                <!-- DEPOSIT -->
-
-                <div class="dashboard-card">
-
-                    <h3>
-                        Deposit
-                    </h3>
-
-                    <p>
-                        Add funds to your account.
-                    </p>
-
-                    <button type="button">
-                        Deposit
-                    </button>
-
-                </div>
-
-
-
-                <!-- WITHDRAW -->
-
-                <div class="dashboard-card">
-
-                    <h3>
-                        Withdraw
-                    </h3>
-
-                    <p>
-                        Withdraw available funds.
-                    </p>
-
-                    <button type="button">
-                        Withdraw
-                    </button>
-
-                </div>
-
-
-
-                <!-- INVESTMENTS -->
-
-                <div class="dashboard-card">
-
-                    <h3>
-                        Investments
-                    </h3>
-
-                    <p>
-                        View and manage your investments.
-                    </p>
-
-                    <button type="button">
-                        View Investments
-                    </button>
-
-                </div>
-
-
-            </div>
-
-        </section>
-
-
-
-        <!-- ========================= -->
-        <!-- CRYPTO WALLET -->
-        <!-- ========================= -->
-
-        <section
-            id="assets"
-            class="dashboard-section"
-        >
-
-            <p class="section-label">
-                SECURE WALLET
-            </p>
-
-            <h2>
-                Crypto Assets
-            </h2>
-
-
-            <div class="dashboard-grid">
-
-
-                <!-- BITCOIN -->
-
-                <div class="dashboard-card">
-
-                    <div class="asset-icon">
-
-                        <img
-                            src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='Vrstva_1'%20xmlns='http://www.w3.org/2000/svg'%20version='1.1'%20viewBox='0%200%20144%20145'%3e%3c!--%20Generator:%20Adobe%20Illustrator%2029.4.0,%20SVG%20Export%20Plug-In%20.%20SVG%20Version:%202.1.0%20Build%20152)%20--%3e%3cdefs%3e%3cstyle%3e%20.st0%20{%20fill:%20%23fff;%20}%20.st1%20{%20fill:%20%23f7931a;%20}%20%3c/style%3e%3c/defs%3e%3cpath%20class='st1'%20d='M141.845993,89.6650009c-9.6209869,38.5709915-48.6898956,62.0459976-87.2698898,52.4280014C16.0121002,132.4759979-7.46593,93.4079971,2.1570699,54.8390007,11.7711,16.2639999,50.8431015-7.2140098,89.4101028,2.4029901c38.5748978,9.6170104,62.0519028,48.6880095,52.4358902,87.2620108Z'/%3e%3cpath%20class='st0'%20d='M48.3110008,84.375c-.3920021.9720001-1.3850021,2.4309998-3.6210022,1.8769989.0790024.1139984-5.7449989-1.4329987-5.7449989-1.4329987l-3.9199982,9.0410004,10.2799988,2.5629959c1.9109993.4790039,3.7879982.9790039,5.632,1.4530029l-3.2670021,13.1269989,7.8910027,1.9690018,3.2369995-12.9869995c2.1580009.5839996,4.25,1.125,6.2980003,1.6340027l-3.2260017,12.9259949,7.8999977,1.9690018,3.2700043-13.1019974c13.4729996,2.5479965,23.6039963,1.5199966,27.8659973-10.663002,3.4370041-9.8099976-.1699982-15.4690018-7.2579956-19.1600037,5.1609955-1.1899948,9.0509949-4.5859985,10.0879974-11.5979958,1.4329987-9.5820007-5.862999-14.7310028-15.8379974-18.1669998l3.2350006-12.9780006-7.8990021-1.9689999-3.151001,12.6359997c-2.0790024-.5180016-4.2099991-1.0060005-6.3310013-1.4890022l3.1709976-12.7199974-7.8939972-1.9690018-3.2389984,12.9760017-15.9309998-3.9459991-2.1020012,8.4369965s5.8610001,1.3430023,5.7369995,1.427002c3.2000008.7989998,3.7770004,2.9160004,3.6809998,4.5940018l-8.8639984,35.5519981ZM85.6869965,87.302002c-2.4440002,9.810997-18.9599991,4.5069962-24.317997,3.1759949l4.3380013-17.3889999c5.3549957,1.3350067,22.5299988,3.9810028,19.9799957,14.2130051ZM88.1269989,61.8499985c-2.2259979,8.9240036-15.9749985,4.3889999-20.4349976,3.2770004l3.9319992-15.7719994c4.4589996,1.1119995,18.8239975,3.1870003,16.5029984,12.4949989Z'/%3e%3c/svg%3e"
-                            alt="Bitcoin"
-                        >
-
-                    </div>
-
-
-                    <h3>
-                        Bitcoin
-                    </h3>
-
-                    <p>
-                        BTC
-                    </p>
-
-                    <strong>
-                        $0.00
-                    </strong>
-
-                </div>
-
-
-
-                <!-- TETHER -->
-
-                <div class="dashboard-card">
-
-                    <div class="asset-icon">
-
-                        <img
-                            src="data:image/svg+xml,%3csvg%20width='165'%20height='165'%20viewBox='0%200%20165%20165'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M54.6366%2084.7375C57.3593%2087.7551%2068.4638%2090.0184%2081.7556%2090.0187C95.0473%2090.0184%20106.152%2087.7551%20108.868%2084.7375C106.568%2082.1761%2098.2286%2080.16%2087.6395%2079.6084V85.9928C85.7422%2086.0879%2083.7694%2086.1387%2081.7524%2086.1387C79.7354%2086.1387%2077.7626%2086.0943%2075.8653%2085.9928V79.6084C65.2825%2080.16%2056.9435%2082.1761%2054.6366%2084.7375Z'%20fill='%23009393'/%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M117.391%2048.0668L135.525%2079.3865V79.3929C136.464%2081.0159%20136.187%2083.0637%20134.844%2084.3825L84.924%20133.397C83.3041%20134.989%2080.701%20134.989%2079.0874%20133.397L29.2301%2084.4459C27.8623%2083.0954%2027.6039%2080.9906%2028.6124%2079.3548L47.9943%2047.9654C48.7507%2046.7481%2050.0933%2046%2051.5367%2046H113.792C115.28%2046%20116.647%2046.7862%20117.391%2048.0668ZM87.6458%2068.7733V74.8661H87.6395C100.094%2075.5191%20109.442%2078.1946%20109.511%2081.4027V88.085C109.442%2091.2931%20100.094%2093.9622%2087.6395%2094.6153V109.571H75.8653V94.6153C63.4105%2093.9622%2054.0693%2091.2931%2054%2088.085V81.4027C54.0693%2078.1946%2063.4105%2075.5191%2075.8653%2074.8661V68.7733H58.1348V59.9861H105.376V68.7733H87.6458Z'%20fill='%23009393'/%3e%3c/svg%3e"
-                            alt="Tether"
-                        >
-
-                    </div>
-
-
-                    <h3>
-                        Tether
-                    </h3>
-
-                    <p>
-                        USDT
-                    </p>
-
-                    <strong>
-                        $0.00
-                    </strong>
-
-                </div>
-
-
-
-                <!-- ETHEREUM -->
-
-                <div class="dashboard-card">
-
-                    <div class="asset-icon">
-
-                        <img
-                            src="data:image/svg+xml,%3csvg%20enable-background='new%200%200%201920%201920'%20viewBox='0%200%201920%201920'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='m959.8%2080.7-539.7%20895.6%20539.7-245.3z'%20fill='%238a92b2'/%3e%3cpath%20d='m959.8%20731-539.7%20245.3%20539.7%20319.1z'%20fill='%2362688f'/%3e%3cpath%20d='m1499.6%20976.3-539.8-895.6v650.3z'%20fill='%2362688f'/%3e%3cpath%20d='m959.8%201295.4%20539.8-319.1-539.8-245.3z'%20fill='%23454a75'/%3e%3cpath%20d='m420.1%201078.7%20539.7%20760.6v-441.7z'%20fill='%238a92b2'/%3e%3cpath%20d='m959.8%201397.6v441.7l540.1-760.6z'%20fill='%2362688f'/%3e%3c/svg%3e"
-                            alt="Ethereum"
-                        >
-
-                    </div>
-
-
-                    <h3>
-                        Ethereum
-                    </h3>
-
-                    <p>
-                        ETH
-                    </p>
-
-                    <strong>
-                        $0.00
-                    </strong>
-
-                </div>
-
-
-            </div>
-
-        </section>
-
-
-
-        <!-- ========================= -->
-        <!-- INVESTMENTS -->
-        <!-- ========================= -->
-
-        <section
-            id="investments"
-            class="dashboard-section"
-        >
-
-            <p class="section-label">
-                INVESTMENTS
-            </p>
-
-            <h2>
-                Your Investments
-            </h2>
-
-
-            <div class="dashboard-card">
-
-                <h3>
-                    No investments yet
-                </h3>
-
-                <p>
-                    Your active investments will appear
-                    here when you have an investment.
-                </p>
-
-                <button type="button">
-                    Explore Investments
-                </button>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- ========================= -->
-        <!-- TRANSACTIONS -->
-        <!-- ========================= -->
-
-        <section
-            id="transactions"
-            class="dashboard-section"
-        >
-
-            <p class="section-label">
-                ACTIVITY
-            </p>
-
-            <h2>
-                Recent Transactions
-            </h2>
-
-
-            <div class="dashboard-card">
-
-                <h3>
-                    No transactions yet
-                </h3>
-
-                <p>
-                    Your deposits, withdrawals and other
-                    account activity will appear here.
-                </p>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- ========================= -->
-        <!-- ACCOUNT SECURITY -->
-        <!-- ========================= -->
-
-        <section
-            id="security"
-            class="dashboard-section"
-        >
-
-            <p class="section-label">
-                ACCOUNT SECURITY
-            </p>
-
-            <h2>
-                Protect Your Account
-            </h2>
-
-
-            <div class="dashboard-card">
-
-                <h3>
-                    Two-Factor Authentication
-                </h3>
-
-                <p>
-                    Add an extra layer of protection to
-                    your Deetrive account.
-                </p>
-
-                <button type="button">
-                    Manage Security
-                </button>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- ========================= -->
-        <!-- ACCOUNT INFORMATION -->
-        <!-- ========================= -->
-
-        <section class="dashboard-section">
-
-            <p class="section-label">
-                ACCOUNT
-            </p>
-
-            <h2>
-                Account Information
-            </h2>
-
-
-            <div class="dashboard-card">
-
-                <p>
-
-                    <strong>
-                        Account status:
-                    </strong>
-
-                    Active
-
-                </p>
-
-
-                <p>
-
-                    <strong>
-                        Email:
-                    </strong>
-
-                    <span id="account-email">
-                        Your registered email
-                    </span>
-
-                </p>
-
-
-                <button type="button">
-                    Account Settings
-                </button>
-
-            </div>
-
-        </section>
-
-
-    </main>
-
-
-
-    <!-- ========================= -->
-    <!-- FOOTER -->
-    <!-- ========================= -->
-
-    <footer>
-
-        <p>
-            © 2026 Deetrive. All rights reserved.
+        <p class="section-label">
+            ACTIVITY
         </p>
 
-    </footer>
+        <h2>
+            Recent Transactions
+        </h2>
 
 
-</body>
+        <div class="dashboard-card">
 
-</html>
+            <h3>
+                No transactions yet
+            </h3>
+
+            <p>
+                Your deposits, withdrawals and other
+                account activity will appear here.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ACCOUNT SECURITY -->
+
+    <section
+        id="security"
+        class="dashboard-section"
+    >
+
+        <p class="section-label">
+            ACCOUNT SECURITY
+        </p>
+
+        <h2>
+            Protect Your Account
+        </h2>
+
+
+        <div class="dashboard-card">
+
+            <h3>
+                Two-Factor Authentication
+            </h3>
+
+            <p>
+                Add an extra layer of protection to
+                your Deetrive account.
+            </p>
+
+            <button type="button">
+                Manage Security
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ACCOUNT INFORMATION -->
+
+    <section class="dashboard-section">
+
+        <p class="section-label">
+            ACCOUNT
+        </p>
+
+        <h2>
+            Account Information
+        </h2>
+
+
+        <div class="dashboard-card">
+
+            <p>
+
+                <strong>
+                    Account status:
+                </strong>
+
+                Active
+
+            </p>
+
+
+            <p>
+
+                <strong>
+                    Email:
+                </strong>
+
+                <span id="account-email">
+                    Your registered email
+                </span>
+
+            </p>
+
+
+            <button type="button">
+                Account Settings
+            </button>
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <p>
+        © 2026 Deetrive. All rights reserved.
+    </p>
+
+</footer>
+
+</body></html>
