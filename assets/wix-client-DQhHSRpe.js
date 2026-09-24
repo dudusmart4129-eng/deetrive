@@ -1,1 +1,0 @@
-import{n as e,t}from"./wix-client-CHDbcPit.js";t();export{e as wixClient};

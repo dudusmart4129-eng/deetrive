@@ -1,0 +1,1 @@
+import{i as e,n as t,t as n}from"./build-De_eEwsF.js";import{n as r}from"./dashboard-DL4OQPWp.js";var i,a=r((()=>{n(),i=e({auth:t({clientId:`50a1463b-3a58-4b5e-8d47-8b886771326e`})})}));export{i as n,a as t};
