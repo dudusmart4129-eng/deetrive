@@ -1,1 +1,0 @@
-import{n as e,t}from"./wix-client-DKREb3zB.js";t();export{e as wixClient};
