@@ -2,13 +2,19 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <title>Create Account | Deetrive</title>
 
-  <script type="module" crossorigin src="/deetrive/assets/register-BPbxJTTh.js"></script>
-  <link rel="modulepreload" crossorigin href="/deetrive/assets/wix-client-BcyrvGQV.js">
+
+  <script type="module" crossorigin src="/deetrive/assets/register-xJAnmerY.js"></script>
+  <link rel="modulepreload" crossorigin href="/deetrive/assets/wix-client-DeqPJrXI.js">
   <link rel="stylesheet" crossorigin href="/deetrive/assets/style-B2Rbswhv.css">
 </head>
 
@@ -18,64 +24,124 @@
 
         <div class="login-card">
 
-            <h1>Create your account</h1>
+            <!-- REGISTRATION -->
 
-            <p class="login-intro">
-                Join Deetrive and start your account setup.
-            </p>
+            <section id="register-section">
 
-            <form>
+                <h1>Create your account</h1>
 
-                <label for="full-name">Full name</label>
+                <p class="login-intro">
+                    Join Deetrive and start your account setup.
+                </p>
+
+                <form id="register-form">
+
+                    <label for="full-name">
+                        Full name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="full-name"
+                        placeholder="Enter your full name"
+                        required
+                    >
+
+                    <label for="email">
+                        Email address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Enter your email"
+                        required
+                    >
+
+                    <label for="password">
+                        Password
+                    </label>
+
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Create a password"
+                        required
+                    >
+
+                    <label for="confirm-password">
+                        Confirm password
+                    </label>
+
+                    <input
+                        type="password"
+                        id="confirm-password"
+                        placeholder="Confirm your password"
+                        required
+                    >
+
+                    <button type="submit">
+                        Create Account
+                    </button>
+
+                </form>
+
+                <p class="signup-link">
+
+                    Already have an account?
+
+                    <a href="login.html">
+                        Log in
+                    </a>
+
+                </p>
+
+            </section>
+
+
+            <!-- EMAIL VERIFICATION -->
+
+            <section
+                id="verification-section"
+                hidden
+            >
+
+                <h1>Verify your email</h1>
+
+                <p class="login-intro">
+                    We've sent a verification code to your email address.
+                </p>
+
+                <label for="verification-code">
+                    Verification code
+                </label>
 
                 <input
                     type="text"
-                    id="full-name"
-                    placeholder="Enter your full name"
-                    required
+                    id="verification-code"
+                    placeholder="Enter your verification code"
+                    inputmode="numeric"
+                    autocomplete="one-time-code"
+                    maxlength="6"
                 >
 
-                <label for="email">Email address</label>
-
-                <input
-                    type="email"
-                    id="email"
-                    placeholder="Enter your email"
-                    required
+                <button
+                    type="button"
+                    id="verify-button"
                 >
-
-                <label for="password">Password</label>
-
-                <input
-                    type="password"
-                    id="password"
-                    placeholder="Create a password"
-                    required
-                >
-
-                <label for="confirm-password">Confirm password</label>
-
-                <input
-                    type="password"
-                    id="confirm-password"
-                    placeholder="Confirm your password"
-                    required
-                >
-
-                <button type="submit">
-                    Create Account
+                    Verify Email
                 </button>
 
-            </form>
+                <p class="login-intro">
+                    Enter the code we sent to complete your account setup.
+                </p>
 
-            <p class="signup-link">
-                Already have an account?
-                <a href="login.html">Log in</a>
-            </p>
+            </section>
 
         </div>
 
     </main>
+
 
 </body>
 
