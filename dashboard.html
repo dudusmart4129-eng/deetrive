@@ -8,10 +8,10 @@
 <title>Dashboard | Deetrive</title>
 
 
-  <script type="module" crossorigin src="/deetrive/assets/dashboard-DSqOrLeF.js"></script>
+  <script type="module" crossorigin src="/deetrive/assets/dashboard-D9sh5E5e.js"></script>
   <link rel="modulepreload" crossorigin href="/deetrive/assets/rolldown-runtime-BX80bFGj.js">
   <link rel="modulepreload" crossorigin href="/deetrive/assets/modulepreload-polyfill-P2Xu9kJm.js">
-  <link rel="stylesheet" crossorigin href="/deetrive/assets/style-B2Rbswhv.css">
+  <link rel="stylesheet" crossorigin href="/deetrive/assets/style-CshbL0rQ.css">
 </head><body><!-- ========================= --><!-- HEADER --><!-- ========================= --><header><div class="brand">
 
     <img
@@ -257,6 +257,143 @@
     </div>
 
 </section>
+
+  <!-- ASSET MODAL -->
+
+<div
+    id="asset-modal"
+    class="asset-modal"
+    aria-hidden="true"
+>
+
+    <div
+        class="asset-modal-overlay"
+        id="asset-modal-overlay"
+    ></div>
+
+    <div
+        class="asset-modal-panel"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="asset-modal-name"
+    >
+
+        <div class="asset-modal-handle"></div>
+
+        <!-- MODAL HEADER -->
+
+        <div class="asset-modal-header">
+
+            <div class="asset-modal-asset">
+
+                <div class="asset-modal-icon">
+
+                    <img
+                        id="asset-modal-icon"
+                        src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='Vrstva_1'%20xmlns='http://www.w3.org/2000/svg'%20version='1.1'%20viewBox='0%200%20144%20145'%3e%3c!--%20Generator:%20Adobe%20Illustrator%2029.4.0,%20SVG%20Export%20Plug-In%20.%20SVG%20Version:%202.1.0%20Build%20152)%20--%3e%3cdefs%3e%3cstyle%3e%20.st0%20{%20fill:%20%23fff;%20}%20.st1%20{%20fill:%20%23f7931a;%20}%20%3c/style%3e%3c/defs%3e%3cpath%20class='st1'%20d='M141.845993,89.6650009c-9.6209869,38.5709915-48.6898956,62.0459976-87.2698898,52.4280014C16.0121002,132.4759979-7.46593,93.4079971,2.1570699,54.8390007,11.7711,16.2639999,50.8431015-7.2140098,89.4101028,2.4029901c38.5748978,9.6170104,62.0519028,48.6880095,52.4358902,87.2620108Z'/%3e%3cpath%20class='st0'%20d='M48.3110008,84.375c-.3920021.9720001-1.3850021,2.4309998-3.6210022,1.8769989.0790024.1139984-5.7449989-1.4329987-5.7449989-1.4329987l-3.9199982,9.0410004,10.2799988,2.5629959c1.9109993.4790039,3.7879982.9790039,5.632,1.4530029l-3.2670021,13.1269989,7.8910027,1.9690018,3.2369995-12.9869995c2.1580009.5839996,4.25,1.125,6.2980003,1.6340027l-3.2260017,12.9259949,7.8999977,1.9690018,3.2700043-13.1019974c13.4729996,2.5479965,23.6039963,1.5199966,27.8659973-10.663002,3.4370041-9.8099976-.1699982-15.4690018-7.2579956-19.1600037,5.1609955-1.1899948,9.0509949-4.5859985,10.0879974-11.5979958,1.4329987-9.5820007-5.862999-14.7310028-15.8379974-18.1669998l3.2350006-12.9780006-7.8990021-1.9689999-3.151001,12.6359997c-2.0790024-.5180016-4.2099991-1.0060005-6.3310013-1.4890022l3.1709976-12.7199974-7.8939972-1.9690018-3.2389984,12.9760017-15.9309998-3.9459991-2.1020012,8.4369965s5.8610001,1.3430023,5.7369995,1.427002c3.2000008.7989998,3.7770004,2.9160004,3.6809998,4.5940018l-8.8639984,35.5519981ZM85.6869965,87.302002c-2.4440002,9.810997-18.9599991,4.5069962-24.317997,3.1759949l4.3380013-17.3889999c5.3549957,1.3350067,22.5299988,3.9810028,19.9799957,14.2130051ZM88.1269989,61.8499985c-2.2259979,8.9240036-15.9749985,4.3889999-20.4349976,3.2770004l3.9319992-15.7719994c4.4589996,1.1119995,18.8239975,3.1870003,16.5029984,12.4949989Z'/%3e%3c/svg%3e"
+                        alt=""
+                    >
+
+                </div>
+
+                <div>
+
+                    <h2 id="asset-modal-name">
+                        Bitcoin
+                    </h2>
+
+                    <p id="asset-modal-symbol">
+                        BTC
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="asset-modal-price">
+
+                <span>
+                    Current Price
+                </span>
+
+                <strong id="asset-modal-price">
+                    $0.00
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <!-- BALANCE -->
+
+        <div class="asset-modal-balance">
+
+            <p>
+                Your Balance
+            </p>
+
+            <h2 id="asset-modal-balance">
+                0.0000 BTC
+            </h2>
+
+            <span id="asset-modal-usd">
+                $0.00
+            </span>
+
+        </div>
+
+
+        <!-- ACTIONS -->
+
+        <div class="asset-modal-actions">
+
+            <button
+                type="button"
+                id="asset-deposit-btn"
+            >
+                Deposit / Receive
+            </button>
+
+            <button
+                type="button"
+                id="asset-withdraw-btn"
+            >
+                Withdraw / Send
+            </button>
+
+        </div>
+
+
+        <!-- ACTIVITY -->
+
+        <div class="asset-modal-activity">
+
+            <p class="section-label">
+                ASSET ACTIVITY
+            </p>
+
+            <h3>
+                Recent Asset Transactions
+            </h3>
+
+            <div class="asset-empty-state">
+
+                <p>
+                    No transactions yet
+                </p>
+
+                <span>
+                    Your Bitcoin activity will appear here.
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
 
 
 <!-- INVESTMENTS -->
