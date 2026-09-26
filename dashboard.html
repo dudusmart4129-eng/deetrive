@@ -8,7 +8,7 @@
 <title>Dashboard | Deetrive</title>
 
 
-  <script type="module" crossorigin src="/deetrive/assets/dashboard-i2gqbx6y.js"></script>
+  <script type="module" crossorigin src="/deetrive/assets/dashboard-DMg7Uu53.js"></script>
   <link rel="modulepreload" crossorigin href="/deetrive/assets/rolldown-runtime-BX80bFGj.js">
   <link rel="modulepreload" crossorigin href="/deetrive/assets/modulepreload-polyfill-P2Xu9kJm.js">
   <link rel="stylesheet" crossorigin href="/deetrive/assets/style-1TZ9Zn0K.css">
@@ -281,13 +281,24 @@
     ></div>
 
     <div
-        class="asset-modal-panel"
-        role="dialog"
-        aria-modal="true"
-        aria-labelledby="asset-modal-name"
-    >
+        
+      <div
+    class="asset-modal-panel"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="asset-modal-name"
+>
 
-        <div class="asset-modal-handle"></div>
+    <div class="asset-modal-handle"></div>
+
+    <button
+        type="button"
+        id="close-asset-modal"
+        class="asset-modal-close"
+        aria-label="Close"
+    >
+        ×
+    </button>
 
         <!-- MODAL HEADER -->
 
@@ -756,13 +767,8 @@
         >
             Cancel
         </button>
-
-    </div>
-
-</div>
-
-
-<!-- INVESTMENT CONFIRMATION -->
+      
+      <!-- INVESTMENT CONFIRMATION -->
 
 <div
     id="investment-confirmation"
@@ -831,6 +837,13 @@
 
 </div>
 
+    </div>
+
+</div>
+
+
+
+
 <!-- TRANSACTIONS -->
 
 <section
@@ -867,6 +880,52 @@
     </div>
 
 </section>
+
+  <!-- ALL TRANSACTIONS MODAL -->
+
+<div
+    id="all-transactions-modal"
+    class="all-transactions-modal"
+    aria-hidden="true"
+>
+
+    <div
+        id="all-transactions-overlay"
+        class="all-transactions-overlay"
+    ></div>
+
+    <div
+        class="all-transactions-panel"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="all-transactions-title"
+    >
+
+        <button
+            type="button"
+            id="close-all-transactions"
+            class="all-transactions-close"
+            aria-label="Close"
+        >
+            ×
+        </button>
+
+        <p class="section-label">
+            ACTIVITY
+        </p>
+
+        <h3 id="all-transactions-title">
+            All Transactions
+        </h3>
+
+        <div
+            id="all-transactions-list"
+            class="all-transactions-list"
+        ></div>
+
+    </div>
+
+</div>
 
 
 <!-- ACCOUNT SECURITY -->
